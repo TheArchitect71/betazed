@@ -1,6 +1,6 @@
 
 {
-    "type": "noSQL",
+    "type": "mongodb",
     "host": "localhost",
     "port": 3000,
     "username": "root",
