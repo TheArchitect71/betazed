@@ -1,7 +1,7 @@
 {
   "name": "betazed",
   "version": "0.0.1",
-  "description": "",
+  "description": "out-of-the-box application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, and easily maintainable application",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
