@@ -1,3 +1,6 @@
+import { jwtSecret } from '../offline-config';
 export const jwtConstants = {
-  secret: 'secretKey',
+  get secret() {
+    return jwtSecret();
+  },
 };

@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
-export type User = any;
+export type User = { userId: number; username: string; password: string };
+import { hashSync } from 'bcryptjs';
 
 @Injectable()
 export class UsersService {
@@ -10,17 +11,17 @@ export class UsersService {
       {
         userId: 1,
         username: 'john',
-        password: 'changeme',
+        password: hashSync('changeme', 10),
       },
       {
         userId: 2,
         username: 'chris',
-        password: 'secret',
+        password: hashSync('secret', 10),
       },
       {
         userId: 3,
         username: 'maria',
-        password: 'guess',
+        password: hashSync('guess', 10),
       },
     ];
   }
